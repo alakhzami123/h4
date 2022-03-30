@@ -15,6 +15,7 @@ namespace Strings
                 string auswahl;
                 Console.WriteLine("1: Zeichen ersetzen.");
                 Console.WriteLine("2: Vokale entfernen.");
+                Console.WriteLine("3: Quersumme bilden.");
                 Console.WriteLine("3: Beenden.");
 
                 Console.Write("Auswahl:");
@@ -53,14 +54,44 @@ namespace Strings
                         string zeichenkette;
                         Console.WriteLine("Zeichenkette eingeben:");
                         zeichenkette = Console.ReadLine();
-                        string ergebnis = "";
+                        string zeichenketteAlt = "";
+                        string vokale = "aieouAIEOU";
+                        string ersetzt2 = "";
 
-                        ergebnis = zeichenkette.Replace("a", "");//...
+                        for (int i = 0; i < vokale.Length; i++)
+                        {
+                            //zeichenkette = zeichenkette.Replace(vokale [i].ToString(), "");
+                            for (int j = 0; i < vokale.Length; i++)
+                            {
+                                if (zeichenkette[j] == vokale[i])
+                                {
+                                    ersetzt2 += "";
 
-                        Console.WriteLine(zeichenkette + " wird zu " + ergebnis);
+                                }
+                                else
+                                {
+                                    ersetzt2 += zeichenkette[i];
+
+                                }
+                              
+
+
+
+
+                            }
+
+
+                        }
+
+
+                        Console.WriteLine(zeichenketteAlt + " wird zu " + zeichenkette);
                         break;
                     case "3":
-                        Console.WriteLine("Programm wird beendet.");
+                        Console.WriteLine("Die Quersumme einer ganzer zahl soll berechnet werden.");
+
+
+
+
 
                         break;
 
