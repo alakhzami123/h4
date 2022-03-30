@@ -98,7 +98,7 @@ namespace Strings
                     default:
                         Console.WriteLine("Auswahl ungültig.");
                         break;
-                }
+                } //ghchgc
                 Console.WriteLine("Neue Auswahl? (j/n)");
                 wiederholen = Console.ReadLine();
             } while (wiederholen == "j" || wiederholen == "J");
